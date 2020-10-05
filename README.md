@@ -10,5 +10,9 @@ Remove all other chats in your resource folders.
 
 : https://gyazo.com/db2d20b921edd3028ac5d25a96d19098
 
-# Any Issues Or Help 
-https://discord.gg/gmAcpDU
+
+# Personal Discord
+
+Talk about coding, updates on new and streams, first look on new stuff.
+
+https://discord.gg/gDzfnm8
