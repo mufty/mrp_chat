@@ -15,4 +15,4 @@ Remove all other chats in your resource folders.
 
 Talk about coding, updates on new and streams, first look on new stuff.
 
-https://discord.gg/gDzfnm8
+https://discord.gg/dHXQsmzaEx
