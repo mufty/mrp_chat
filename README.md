@@ -1,3 +1,5 @@
+## This is a fork of https://github.com/OnTheFifth/chat but changed to support MRP instead of ESX
+
 # Chat
 FiveM Chat System | Works off ESX Framework
 
