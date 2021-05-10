@@ -2,6 +2,10 @@ resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
 
 ui_page 'html/index.html'
 
+dependencies {
+  "mrp_core"
+}
+
 files {
   'html/index.html',
   'html/css/index.css',
@@ -29,7 +33,7 @@ client_scripts {
 }
 
 server_scripts {
-  '@mysql-async/lib/MySQL.lua',
+  --'@mrp_core/server/db.js',
   'server/utils.lua',
   'server/commands.lua',
   'server/sv_chat.lua',

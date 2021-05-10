@@ -23,7 +23,7 @@ window.APP = {
     window.removeEventListener('message', this.listener);
   },
   mounted() {
-    post('http://chat/loaded', JSON.stringify({}));
+    post('http://mrp_chat/loaded', JSON.stringify({}));
     this.listener = window.addEventListener('message', (event) => {
       const item = event.data || event.detail; //'detail' is for debuging via browsers
       if (this[item.type]) {
@@ -123,7 +123,7 @@ window.APP = {
       for (let i = 0; i < document.styleSheets.length; i++) {
         const styleSheet = document.styleSheets[i];
         const node = styleSheet.ownerNode;
-        
+
         if (node.getAttribute('data-theme')) {
           node.parentNode.removeChild(node);
         }
@@ -155,7 +155,7 @@ window.APP = {
 
           document.head.appendChild(style);
         }
-        
+
         if (data.styleSheet) {
           const link = document.createElement('link');
           link.rel = 'stylesheet';
@@ -244,7 +244,7 @@ window.APP = {
     },
     send(e) {
       if(this.message !== '') {
-        post('http://chat/chatResult', JSON.stringify({
+        post('http://mrp_chat/chatResult', JSON.stringify({
           message: this.message,
         }));
         this.oldMessages.unshift(this.message);
@@ -256,7 +256,7 @@ window.APP = {
     },
     hideInput(canceled = false) {
       if (canceled) {
-        post('http://chat/chatResult', JSON.stringify({ canceled }));
+        post('http://mrp_chat/chatResult', JSON.stringify({ canceled }));
       }
       this.message = '';
       this.showInput = false;
