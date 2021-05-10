@@ -5,8 +5,8 @@ FiveM Chat System | Works off ESX Framework
 
 # Installation
 
-Add 'ensure Chat' into your server.cfg
-Remove all other chats in your resource folders.
+Add 'ensure mrp_chat' into your server.cfg
+Remove all other chats in your resource folders or from server.cfg.
 
 # Photo
 
