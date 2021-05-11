@@ -3,43 +3,16 @@
 MRP = nil
 
 local function getPlayerData()
-	Citizen.Trace ("1")
 	while MRP == nil do
 		TriggerEvent('mrp:getSharedObject', function(obj) MRP = obj end)
 		Citizen.Wait(0)
 	end
-	Citizen.Trace ("2")
 	while MRP.GetPlayerData().job == nil do
 		Citizen.Wait(10)
 	end
-	Citizen.Trace ("3")
 	local playerData = MRP.GetPlayerData()
-	Citizen.Trace ("4")
 	return playerData
 end
-
---[[MRP = nil
-
-Citizen.CreateThread(function()
-	while MRP == nil do
-		TriggerEvent('mrp:getSharedObject', function(obj) MRP = obj end)
-		Citizen.Wait(0)
-	end
-
-	while MRP.GetPlayerData().job == nil do
-		Citizen.Wait(10)
-	end
-
-	PlayerData = MRP.GetPlayerData()
-end)
-
-Citizen.CreateThread(function()
-	while true do
-		Citizen.Wait(60000)
-		PlayerData = MRP.GetPlayerData()
-	end
-end)
-]]--
 
 RegisterCommand('911', function(source, args, rawCommand)
     local source = GetPlayerServerId(PlayerId())
