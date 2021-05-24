@@ -11,8 +11,8 @@ Citizen.CreateThread(function()
 end)
 
 function getIdentity(source)
-	local fivemId = MRP.getFivemId(source)
-	local char = CURRENT_USED_CHARS[fivemId]
+	local userId = MRP.getUserId(source)
+	local char = CURRENT_USED_CHARS[userId]
 	if char ~= nil then
 
 		return {
@@ -29,8 +29,8 @@ function getIdentity(source)
 end
 
 AddEventHandler('mrp:spawn', function(source, characterToUse, spawnIdx)
-	local fivemId = MRP.getFivemId(source)
-	CURRENT_USED_CHARS[fivemId] = characterToUse
+	local userId = MRP.getUserId(source)
+	CURRENT_USED_CHARS[userId] = characterToUse
 end)
 
 AddEventHandler("chatMessage", function(source, color, message)
