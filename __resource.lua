@@ -8,7 +8,6 @@ dependencies {
 
 files {
     'html/index.html',
-    'html/css/index.css',
     'html/js/config.default.js',
     'html/js/config.js',
     'html/js/App.js',
@@ -41,7 +40,7 @@ server_scripts {
 }
 
 chat_theme 'gtao' {
-    styleSheet = 'style.css',
+    styleSheet = 'html/css/style.css',
     msgTemplates = {
         default = '<b>{0}</b><span>{1}</span>'
     }
