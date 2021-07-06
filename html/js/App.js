@@ -172,7 +172,7 @@ window.APP = {
                     const link = document.createElement('link');
                     link.rel = 'stylesheet';
                     link.type = 'text/css';
-                    link.href = data.baseUrl + 'css/' + data.styleSheet;
+                    link.href = data.baseUrl + data.styleSheet;
                     link.setAttribute('data-theme', id);
 
                     document.head.appendChild(link);

@@ -9,7 +9,6 @@ dependencies {
 files {
     'html/index.html',
     'html/js/config.default.js',
-    'html/js/config.js',
     'html/js/App.js',
     'html/js/Message.js',
     'html/js/Suggestions.js',
